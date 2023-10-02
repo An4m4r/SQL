@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cores na web</title>
+<style>
+h1, #nome{
+    color: brown;
+}
+h2,#hexa{
+    color: crimson;
+}
+h3, #rgb{
+    color: darkmagenta;
+}
+h4, #rgba{
+    color: darkorange;
+
+}
+h5, #grad{
+    /*da esquerda para direita*/
+    background-image:linear-gradient(to right,red, green,blue);
+    color: #ffffff;
+}
+h6, #grad{
+/*da esquerda para direita*/
+height: 7rem;
+background-image:linear-gradient(to bottom right,red,yellow,white,aqua,violet);
+color: #ffffff;
+}
+#radial{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background-image: radial-gradient(red,yellow,white);
+
+}
+#conico{
+    color:white;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background-image:conic-gradient(rgb(4, 0, 255),rgb(0, 255, 242),green,blue,black);
+
+}
+</style>
+</head>
+<body>
+    <h1>usando palagrafo</h1>
+    <p style="color:red;">cor por nome</p>
+     <p style= "color:#ffffff;"">cor por hexadecimal</p>
+     <p style="color:rgb(255, 0,0);">cor por Rgb</p>
+     <p style="color:rgba(255, 0, 0.1);">cor por RGBA</p>"
+     <p style="background-image: linear-gradient(to right,red,green,blue)">cor por gradient</p>
+
+     <hr size="5px" color="black" />
+     <div id="nome" >cor por nome</div>
+     <div id="hexa" >cor por hexadecimal</div>
+     <div id="rgb" >cor por RGB</div>
+     <div id="rgba">cor por RGBA</div>
+     <div id="grad" > cor por gradiente</div>
+
+     <hr size="5px" color="black" />
+
+     <h1>usando titulos</h1>
+     <h1>cor por nome</h1>
+     <h2>cor por hexadecimal</h2>
+     <h3>cor por RGB</h3>
+     <h4>cor por RGBA</h4>
+     <h5>cor por gradiente linear</h5>
+     <h6>cor por gradiente diagonal</h6>
+
+     <hr size="5px" color="black"/>
+     <div id="radial">RADIAL</div>
+
+     <hr size="5px" color="black"/>
+     <div id="cinico">CONICO</div>
+    
+
+</body>
+</html>
